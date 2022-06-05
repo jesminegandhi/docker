@@ -1,0 +1,16 @@
+version: "3.3"
+services: 
+  api:
+    container_name: dev1
+    build: ./dev1/
+    ports:
+      - "5000:5000"
+    volumes:
+      - type: volume
+        source: dev1-vol
+        target: /app
+volumes:
+  dev1-vol: {}
+  
+    
+  
